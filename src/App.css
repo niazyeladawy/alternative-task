@@ -1,0 +1,24 @@
+.submenu {
+    display: none;
+}
+
+.li:hover>.submenu {
+    display: block;
+}
+
+.submenu .submenu {
+    left: 100%;
+    top: 0;
+}
+
+.menu-item svg{
+    width: 30px;
+    height: auto    ;
+    transform: rotate(0);
+    transition: all .3s;
+}
+.menu-item.active   svg{
+    transform: rotate(180deg);
+}
+
+
