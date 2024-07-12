@@ -24,11 +24,13 @@ const initialMenuItems: MenuItemType[] = [
                 id: '3',
                 label: 'Team',
                 url: '/about/team',
+                subItems: []
             },
             {
                 id: '4',
                 label: 'Careers',
                 url: '/about/careers',
+                subItems: []
             },
         ],
     },
