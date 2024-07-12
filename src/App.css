@@ -17,7 +17,7 @@
     transform: rotate(0);
     transition: all .3s;
 }
-.menu-item.active   svg{
+.menu-item.active > div  > h3 >  svg{
     transform: rotate(180deg);
 }
 
