@@ -15,7 +15,7 @@ import { useMenuItems } from "../context/MenuItemsContext";
                 if (item.id === activeId) {
                     return {
                         ...item,
-                        subItems: [...item.subItems, newItem]
+                        subItems: [...(item.subItems || []), newItem]
                     };
                 } else if (Array.isArray(item.subItems) && item.subItems.length > 0) {
                     return {
@@ -27,6 +27,7 @@ import { useMenuItems } from "../context/MenuItemsContext";
                 }
             });
         };
+        
 
 
         const addMenuItem = (url: string, label: string) => {
